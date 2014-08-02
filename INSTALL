@@ -1,0 +1,4 @@
+Building Onyxcoin
+See doc/readme-qt.rst for instructions on building Onyxcoin QT.
+
+See doc/build-*.txt for instructions on building onyxcoind.
