@@ -2489,9 +2489,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "onyxcoin cryptocurrency hybrid 20143007";
+        const char* pszTimestamp = "OnyxCoin v2.0";
         CTransaction txNew;
-        txNew.nTime = 1406996304;
+        txNew.nTime = 1407013385;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2501,9 +2501,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1406996304;
+        block.nTime    = 1407013385;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 274423;
+        block.nNonce   = 2799917;
 		if(fTestNet)
         {
             block.nNonce   = 0;
@@ -2530,7 +2530,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("0x6a6dbed6cdd6f5855fbd2173191e4588ef82406a4a3ea8c6686a75bd8e3761de"));
+        assert(block.hashMerkleRoot == uint256("0xe9780fc083c91d40c86a25ab5609a71e01c0e4520a27cfb31be831da8c44ecfb"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
