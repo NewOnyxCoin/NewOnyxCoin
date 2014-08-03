@@ -1139,7 +1139,7 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"104.128.234.10", "104.128.234.10"}, //Main Onyxcoin Seed Node
+    {"theonyxcoin.com", "seed.theonyxcoin.com"}, //Main Onyxcoin Seed Node
 };
 
 void ThreadDNSAddressSeed(void* parg)
