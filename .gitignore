@@ -48,6 +48,7 @@ src/test_onyxcoin
 *.orig
 *.o
 *.patch
+*.P
 .onyxcoin
 *.directory
 
@@ -72,3 +73,5 @@ qrc_*.cpp
 build
 
 !src/leveldb-*/Makefile
+
+src/obj/build.h
