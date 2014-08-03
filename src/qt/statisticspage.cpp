@@ -61,13 +61,13 @@ void StatisticsPage::updateStatistics()
     }
 
     QString subsidy = "";
-	if(pindexBest->nHeight < 250)
+	if(pindexBest->nHeight < 50)
     {
-		subsidy = "1 ONYX per block";
+		subsidy = "15 ONYX per block";
     }
 	else if(pindexBest->nHeight < 1500000)
     {
-		subsidy = "10 ONYX per block";
+		subsidy = "1000 ONYX per block";
     }
     QString hardness = QString::number(pHardness, 'f', 6);
     QString hardness2 = QString::number(pHardness2, 'f', 6);
@@ -75,7 +75,7 @@ void StatisticsPage::updateStatistics()
     QString Qlpawrate = model->getLastBlockDate().toString();
 
     QString QPeers = QString::number(peers);
-    QString qVolume = QLocale(QLocale::English).toString(volume);
+    QString qVolume = QLocale(QLocale::English).toString(int(volume));
 
     if(nHeight > heightPrevious)
     {

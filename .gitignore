@@ -38,9 +38,9 @@ Icon
 
 
 src/*.exe
-src/parallaxcoin
-src/parallaxcoind
-src/test_parallaxcoin
+src/onyxcoin
+src/onyxcoind
+src/test_onyxcoin
 .*.swp
 *.*~*
 *.bak
@@ -48,18 +48,18 @@ src/test_parallaxcoin
 *.orig
 *.o
 *.patch
-.parallaxcoin
+.onyxcoin
 *.directory
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-parallaxcoin-qt
-ParallaxCoin-Qt.app
+onyxcoin-qt
+OnyxCoin-Qt.app
 
 # Unit-tests
 Makefile.test
-parallaxcoin-qt_test
+onyxcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp

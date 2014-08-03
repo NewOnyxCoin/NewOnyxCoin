@@ -965,15 +965,11 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 100 * COIN;
-	if(pindexBest->nHeight < 1)
-    {
-        nSubsidy = 15 * COIN; // 0.000001% pre-mine
-    }
-		else if(pindexBest->nHeight < 50)
+    if(pindexBest->nHeight < 50)
     {
 		nSubsidy = 15 * COIN; // Low reward to get the ball rollin' gnome sayan
     }
-		else if(pindexBest->nHeight < 1500000)
+    else if(pindexBest->nHeight < 1500000)
     {
 		nSubsidy = 1000 * COIN; // Reduced Proof-of-Work Phase to 10 days
     }
