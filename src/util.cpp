@@ -1030,7 +1030,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Onyxcoin";
 #else
     // Unix
-    return pathRet / ".Onyxcoin";
+    return pathRet / ".onyxcoin";
 #endif
 #endif
 }
@@ -1072,7 +1072,7 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "Onyxcoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "onyxcoin.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
