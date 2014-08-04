@@ -51,11 +51,11 @@ void StatisticsPage::updateStatistics()
     QString stakemin = QString::number(nMinWeight);
     QString stakemax = QString::number(nNetworkWeight);
     QString phase = "";
-    if (pindexBest->nHeight < 1500000)
+    if (pindexBest->nHeight < 15000)
     {
-        phase = "X13 POW (POS Starts Block 1500000)";
+        phase = "X13 POW (POS Starts Block 15000)";
     }
-    else if (pindexBest->nHeight > 1500000)
+    else if (pindexBest->nHeight > 15000)
     {
         phase = "POS";
     }
@@ -65,7 +65,7 @@ void StatisticsPage::updateStatistics()
     {
 		subsidy = "15 ONYX per block";
     }
-	else if(pindexBest->nHeight < 1500000)
+    else if(pindexBest->nHeight < 15000)
     {
 		subsidy = "1000 ONYX per block";
     }
