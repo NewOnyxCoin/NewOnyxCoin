@@ -6,8 +6,8 @@ Onyxcoin V2 is a relaunch of the original Onyxcoin. We made some minor modificat
 * RPC Port: 51990
 * P2P Port: 50990
 * Algorithm: X13 POW/POS starts on block 15,000
-* Ticker: ONYX
-* Max PoW Coins: Approx. ~15,000,000
+* Ticker: ONYX2
+* Max PoW Coins: Approximately 15 million
 * 5% PoS Annual Interest
 
 * Block Reward Schedule:
@@ -17,7 +17,7 @@ Onyxcoin V2 is a relaunch of the original Onyxcoin. We made some minor modificat
 * Block 50-15,000 are 1,000
 * PoW Ends on Block 15,000 (approx. 15 days)
 
-* MinStakeAge: 24 hours, 
+* MinStakeAge: 24 hours 
 * Max: Unlimited
 
 ##Troubleshooting
@@ -50,6 +50,7 @@ chmod 755 src/leveldb/build_detect_platform
 and try it again.
 
 http://www.theonyxcoin.com
+https://bitcointalk.org/index.php?topic=724186.0
 
 ------------------------------------------
 
