@@ -50,6 +50,7 @@ chmod 755 src/leveldb/build_detect_platform
 and try it again.
 
 http://www.theonyxcoin.com
+
 https://bitcointalk.org/index.php?topic=724186.0
 
 ------------------------------------------
