@@ -969,7 +969,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
 		nSubsidy = 15 * COIN; // Low reward to get the ball rollin' gnome sayan
     }
-    else if(pindexBest->nHeight < 15000)
+    else if(pindexBest->nHeight < 1500000)
     {
 		nSubsidy = 1000 * COIN; // Reduced Proof-of-Work Phase to 10 days
     }
