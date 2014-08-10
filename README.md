@@ -1,20 +1,24 @@
-*Onyxcoin V2 - X13 CryptoCurrency
-*RPC Port: 51990
-*P2P Port: 50990
-*Algorithm: X13 POW/POS starts on block 15,000
-*Ticker: ONYX
-*Max PoW Coins: Approx. ~15,000,000
-*5% PoS Annual Interest
+##ONYX2
 
-*X13 Hashing Algorithm:(blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo, hamsi, fugue)
+Onyxcoin V2 is a relaunch of the original Onyxcoin. We made some minor modifications to the codebase including a removed pre-mine and decreased Proof-of-Work period. 
 
-*Block Reward Schedule:
-*No Pre-Mine
-*Block 0-50 are low reward test blocks to prevent insta-mine
-*Block 50-15,000 are 1,000
-*PoW Ends on Block 15,000 (approx. 10 days)
+* Onyxcoin V2 - X13 CryptoCurrency
+* RPC Port: 51990
+* P2P Port: 50990
+* Algorithm: X13 POW/POS starts on block 15,000
+* Ticker: ONYX
+* Max PoW Coins: Approx. ~15,000,000
+* 5% PoS Annual Interest
 
-*PoS Starts on Block 2, MinStakeAge: 24 hours, MaxStakeAge: Unlimited, 5% Annual Interest
+* Block Reward Schedule:
+* 90 second blocks
+* No Pre-Mine
+* Block 0-50 are low reward (15)
+* Block 50-15,000 are 1,000
+* PoW Ends on Block 15,000 (approx. 15 days)
+
+* MinStakeAge: 24 hours, 
+* Max: Unlimited
 
 ##Troubleshooting
 
@@ -43,7 +47,9 @@ Makefile:18: build_config.mk: No such file or directory
 
 chmod 755 src/leveldb/build_detect_platform
 
-try again
+and try it again.
+
+http://www.theonyxcoin.com
 
 ------------------------------------------
 
